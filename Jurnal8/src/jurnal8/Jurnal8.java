@@ -23,6 +23,7 @@ public class Jurnal8 {
         System.out.print("Masukan Jumlah Deret Fibonacci : ");
         int n = sc.nextInt();
         long fibonacci[] = new long[n];
+        int hasil= 0;
          
         fibonacci[0] = 1;
         fibonacci[1] = 1;
@@ -30,11 +31,16 @@ public class Jurnal8 {
          
         for(int i = 2; i < n; i++) {
             fibonacci[i] = fibonacci[i-1] + fibonacci[i-2];
+            hasil+=fibonacci[i];
+            
         }
          
         for (int i = 0; i < n; i++) {
             System.out.print(fibonacci[i] +  " ");
         }
+        System.out.println("");
+        System.out.println("Hasil penjumlahan : "+hasil);
+        
     }
     
 }
